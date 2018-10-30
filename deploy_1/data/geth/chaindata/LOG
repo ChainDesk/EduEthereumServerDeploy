@@ -1,6 +1,18 @@
 =============== Oct 30, 2018 (CST) ===============
-10:43:31.982945 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-10:43:31.986381 db@open opening
-10:43:31.990590 version@stat F·[] S·0B[] Sc·[]
-10:43:31.990885 db@janitor F·2 G·0
-10:43:31.990917 db@open done T·4.482748ms
+11:35:19.678208 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:35:19.679224 db@open opening
+11:35:19.679989 version@stat F·[] S·0B[] Sc·[]
+11:35:19.680583 db@janitor F·2 G·0
+11:35:19.680666 db@open done T·1.379993ms
+=============== Oct 30, 2018 (CST) ===============
+11:35:42.604071 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:35:42.604339 version@stat F·[] S·0B[] Sc·[]
+11:35:42.604369 db@open opening
+11:35:42.604457 journal@recovery F·1
+11:35:42.608785 journal@recovery recovering @1
+11:35:42.611619 memdb@flush created L0@2 N·621 S·50KiB "\x02d\xfc..\x19Ba,v282":"\xfe\x88\xcf..H\xef\xcc,v271"
+11:35:42.617280 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+11:35:42.621762 db@janitor F·3 G·0
+11:35:42.622043 db@open done T·17.544414ms
+11:53:35.539609 db@close closing
+11:53:35.539928 db@close done T·316.769µs
