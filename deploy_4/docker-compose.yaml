@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  sealnode-1:
+    container_name: sealnode-1
+    hostname: sealnode-1
+    environment:
+      coinbase: 232327606a63b5e53516dd849c45c6afce4ed717
+      datadir: node1
+    build:
+      context: .
+    ports:
+      - 8545:8545
+      - 30303:30303
+    volumes:
+      - .:/opt
+    networks:
+      - mynet
+
+  sealnode-2:
+    container_name: sealnode-2
+    hostname: sealnode-2
+    environment:
+      coinbase: bb7d18dc172aa7e54601222d0a4df6ecddf9c77f
+      datadir: node2
+    build:
+      context: .
+    ports:
+      - 8546:8545
+      - 30304:30303
+    volumes:
+      - .:/opt
+    networks:
+      - mynet
+
+networks:
+  default:
+    driver: bridge
+  mynet:
+    driver: bridge
